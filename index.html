@@ -43,26 +43,5 @@
     <p style="color: red;">Seperate js files for each method, seperate branches too?</p>
     <p style="color: red;">There's also css extra credit and inputting and stuff we should do after we complete the assignment</p>
 
-    <script>
-        // Recreated method myEach()
-        function myEach(arr, callback) {
-            // Your implementation here
-        }
-
-        // Example callback function
-        function exampleCallback(item) {
-            return item * 2;
-        }
-
-        // Function to handle button click
-        document.getElementById('runMethodButton').addEventListener('click', function() {
-            const inputArray = [1, 2, 3, 4, 5];
-            const argument = exampleCallback; // You can change this to the actual argument for the method
-
-            // Call the recreated method and display the result
-            const result = myEach(inputArray, argument);
-            document.getElementById('resultDisplay').textContent = JSON.stringify(result);
-        });
-    </script>
 </body>
 </html>
