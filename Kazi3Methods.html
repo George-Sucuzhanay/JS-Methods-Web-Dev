@@ -23,7 +23,7 @@
     </div>
 
     <!-- Button to run the myLastIndexOf method -->
-    <button id="runMyLastIndexOfButton">Run myLastIndexOf</button>
+    <button id="runMyLastIndexOfButton" onclick="runMyLastIndexOf()">Run myLastIndexOf</button>
 
     <!-- Result Div to display the result of the myLastIndexOf method -->
     <div>
@@ -31,7 +31,23 @@
         <pre id="resultDisplay"></pre>
     </div>
 
-    <!-- JavaScript file -->
+    <!-- include avaScript file -->
     <script src="myLastIndexOf.js"></script>
+
+    <script>
+        function runMyLastIndexOf() 
+        {
+            // Get the input array & target element
+            const inputArray = [1, 2, 3, 4, 3, 5];
+            const targetElement = 3;
+
+            // Call the function
+            const lastIndex = myLastIndexOf(inputArray, targetElement);
+
+            // Display the thing
+            document.getElementById('resultDisplay').textContent = lastIndex;
+        }
+    </script>
+
 </body>
 </html>
