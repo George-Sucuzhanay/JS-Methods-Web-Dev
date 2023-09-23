@@ -14,13 +14,17 @@
     <!-- Input Div to display the input Array -->
     <div>
         <h2>Input Array:</h2>
-        <input type="text" id="inputArray" placeholder="Enter an array (comma separated like 1,2,3,4,3,5)">
+        <input type="text" id="inputArray" placeholder="Enter an array here">
+        <p1>Input format: comma separated elements</p1>
+        <p2>Example input: 1,2,3,4,3,5</p2>
     </div>
 
     <!-- Argument Div to display the target element -->
     <div>
         <h2>Target Element:</h2>
-        <input type="text" id="targetElement" placeholder="Enter a target element (like 3 or something)">
+        <input type="text" id="targetElement" placeholder="Enter a target element here">
+        <p1>Input format: an element</p1>
+        <p2>Example input: 3</p2>
     </div>
 
     <!-- Button to run the myLastIndexOf method -->
@@ -56,5 +60,26 @@
         }
     </script>
 
+    <!-- New section for grabKeys method -->
+    <h2>grabKeys:</h2>
+    <p>Without using the native “Object.keys()” method of JavaScript, compose a function titled “grabKeys” that will take in an object and return all of the keys of the key:value pairs of that object.</p>
+
+    <!-- Input Div to display the input Object -->
+    <div>
+        <h2>Input Object:</h2>
+        <input type="text" id="inputObject" placeholder="Enter an object here">
+        <p1>Input format: {"key1": "value1", "key2": "value2", "key3": "value3"}</p1>
+        <p2>Example input: {"name": "John", "age": 30, "city": "New York"}</p2>
+
+    </div>
+
+    <!-- Button to run the grabKeys method -->
+    <button id="runGrabKeysButton" onclick="runGrabKeys()">Run grabKeys</button>
+
+    <!-- Result Div to display the result of the grabKeys method -->
+    <div>
+        <h2>Result:</h2>
+        <pre id="resultKeysDisplay"></pre>
+    </div>
 </body>
 </html>
