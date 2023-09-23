@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kazi's 3 Methods</title>
+    <link rel="stylesheet" type="text/css" href="kazi.css">
+</head>
+<body>
+    <h1 style="color:red;">Kazi's 3 javascript methods</h1>
+    <h2>myLastIndexOf: </h2>
+    <p>Without using the native “Array.prototype.lastIndexOf” method of JavaScript, compose a function titled “myLastIndexOf” that will take in an array of elements and returns the index of the last encounter of a target element (if it is found) or -1 if that element does not exist within the input array.</p>
+    
+    <!-- Input Div to display the input Array -->
+    <div>
+        <h2>Input Array:</h2>
+        <input type="text" id="inputArray" placeholder="Enter an array (comma separated like 1,2,3,4,3,5)">
+    </div>
+
+    <!-- Argument Div to display the target element -->
+    <div>
+        <h2>Target Element:</h2>
+        <input type="text" id="targetElement" placeholder="Enter a target element (like 3 or something)">
+    </div>
+
+    <!-- Button to run the myLastIndexOf method -->
+    <button id="runMyLastIndexOfButton" onclick="runMyLastIndexOf()">Run myLastIndexOf</button>
+
+    <!-- Result Div to display the result of the myLastIndexOf method -->
+    <div>
+        <h2>Result:</h2>
+        <pre id="resultDisplay"></pre>
+    </div>
+
+    <!-- include avaScript file -->
+    <script src="kazi.js"></script>
+
+    <script>
+        function runMyLastIndexOf() 
+        {
+            // Get the input array & target element from user input
+            // const inputArray = [1, 2, 3, 4, 3, 5];
+            // const targetElement = 3;
+            const inputArrayStr = document.getElementById('inputArray').value; //gets value stored inside inputArray
+            const targetElementStr = document.getElementById('targetElement').value; //^ 
+
+            // Convert user inputs to arrays
+            const inputArray = inputArrayStr.split(',').map(item => parseInt(item)); //after u .split through the , -> map(item => parseInt(item)) is applied to each substring. parseInt(item) then converts the string to integer 
+            const targetElement = parseInt(targetElementStr); //.map create a new array by applying a provided function to each element of the original array, parseInt(targetElementStr) converts this string into an integer,
+
+            // Call the function
+            const lastIndex = myLastIndexOf(inputArray, targetElement);
+
+            // Display the thing
+            document.getElementById('resultDisplay').textContent = lastIndex;
+        }
+    </script>
+
+</body>
+</html>
