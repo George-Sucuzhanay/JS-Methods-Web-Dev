@@ -15,20 +15,20 @@ function myLastIndexOf(arr, targetElement)
 }
 
 // grabKeys function
-function grabKeys(obj) 
+function grabKeys(obj) //defines function named grabKeys that takes one parameter with parameter obj from which we wanna obtain the keys from
 {
-    return Object.keys(obj);
+    return Object.keys(obj); //return an array containing all the keys of the obj
 }
 
-function runGrabKeys() 
+function runGrabKeys() //runs when button is clicked
 {
     // Get the input object from user input
-    const inputObjectStr = document.getElementById('inputObject').value;
-    const inputObject = JSON.parse(inputObjectStr); // Parse the input as JSON to convert it to an object
+    const inputObjectStr = document.getElementById('inputObject').value; //gets string value stored in inputObject by id
+    const inputObject = JSON.parse(inputObjectStr); // if the input is formatted properly, this parses it and makes an obj outta it stored in inputObject
 
-    // Call the grabKeys function
-    const keys = grabKeys(inputObject);
+    // Call the grabKeys function i made earlier
+    const keys = grabKeys(inputObject); //from the object, ur now retrieiving the keys
 
-    // Display the keys
-    document.getElementById('resultKeysDisplay').textContent = JSON.stringify(keys);
+    // Display the keys by converitng it back to a string
+    document.getElementById('resultKeysDisplay').textContent = JSON.stringify(keys); //stringify converts keys back to string and then in the html file resultKeysDisplay its displayed 
 }
