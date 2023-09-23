@@ -16,12 +16,7 @@ function displayNumbers() {
 
 // calls the myeach fucntion that iterates through the array 
     myEach(numbersArray, function(num) {
-        //creates a pragroh elemetn that holds the values 
-        const paragraph = document.createElement('p');
-        // the values are gonna be stored as num
-        paragraph.innerText = num;
-        // appends the paragraph into the output div
-        outputDiv.appendChild(paragraph);
+        outputDiv.innerHTML += `${num}<br>`;
     });
 }
 
