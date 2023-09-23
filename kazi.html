@@ -67,7 +67,7 @@
 
 <!-- grabKeys method -->
     <h2>grabKeys:</h2>
-    <p>Without using the native “Object.keys()” method of JavaScript, this function titled “grabKeys” will take in an object and return all of the keys of the key:value pairs of that object!</p>
+    <p>Without using the native “Object.keys()” method of JavaScript, this function titled “grabKeys” takes in an object and returns all of the keys of the key:value pairs of that object!</p>
 
     <!-- Input Div to display the input Object -->
     <div>
@@ -87,5 +87,29 @@
         <h2>Result:</h2>
         <pre id="resultKeysDisplay"></pre>
     </div>
+
+<!-- grabValues method -->
+    <h2>grabValues:</h2>
+    <p>Without using the native “Object.values()” method of JavaScript, this function titled “grabValues” takes in an object and returns all of the values of the key:value pairs of that object!</p>
+    
+    <!-- Input Div to display the input Object -->
+    <div>
+        <h2>Input Object:</h2>
+        <input type="text" id="inputObject1" placeholder="Enter an object here">
+        <br>
+        <p1>Input format: {"key1": "value1", "key2": "value2", "key3": "value3"}</p1>
+        <br>
+        <p2>Example input: {"name": "Anwar", "age": 69, "city": "New Yawk"}</p2>
+    </div>
+
+    <!-- Button to run the grabValues method -->
+    <button id="runGrabValuesButton" onclick="runGrabValues()">Run grabValues</button>
+
+    <!-- Result Div to display the result of the grabKeys method -->
+    <div>
+        <h2>Result:</h2>
+        <pre id="resultValuesDisplay"></pre>
+    </div>
+
 </body>
 </html>
