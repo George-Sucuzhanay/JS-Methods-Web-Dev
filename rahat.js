@@ -53,36 +53,3 @@ function displayDoubledNumbers() {
         output2Div.innerHTML += `${num}<br>`;
     });
 }
-
-
-
-// Filter method 
-function myFilter(array, callback){ // 2 params array and callback function
-    let result = [];// Initialize an empty array for the results
-    for(let i=0; i<array.length; i++){ // loop through the array 
-        if(callback(array[i], i, array)){ // call back goes to each element 
-            result.push(array[i]);  //if even push it to result 
-        }  
-    }
-    return result; // return even array
-}
-
-
-
-function displayFilter(){
-    const inputValue = document.getElementById('filterInput').value; // gets the values from the div by id
-    const numbersArray = inputValue.split(',').map(num => num.trim());  //makes it clean
-
-    // FILTER NUMBERS BY EVEN NUMBERS
-    const filtered = myFilter(numbersArray, function(num) {
-        return  num % 2 == 0;
-    });
-//rinsie and repeat from above
-    const output3Div = document.getElementById('output3');
-    output3Div.innerHTML = '';
-
-    // Use myEach to display the filtered numbers
-    myEach(filtered, function(num) {
-        output3Div.innerHTML += `${num}<br>`;
-    });
-}
