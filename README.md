@@ -1,4 +1,5 @@
 # ✨Assignment 2 - Recreating JavaScript Functions ✨
+Project Link: https://george-sucuzhanay.github.io/JS-Methods-Web-Dev/homepage.html
 
 # 🚀 Project Goal
 To improve your understanding of JavaScript syntax and functions, and to better understand JavaScript and Array methods.
