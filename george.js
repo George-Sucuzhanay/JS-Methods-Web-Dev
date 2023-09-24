@@ -7,6 +7,12 @@ function myIncludes(arr, targetElement){
     }
     return false;
 }
+// adding event listener to the myIncludes button
+document.getElementById("myIncludesButton").addEventListener("click", function () {
+    let result = myIncludes([1, 2, 3, 4, 5], 6);
+
+    document.getElementById("displayMyIncludes").textContent = result;
+});
 
 
 // myIndexOf

@@ -10,26 +10,35 @@
 
     <div>
         <h3>Method: myIncludes()</h3>
+        <p>checks existence of an element in an array</p>
+        
         <!-- Input Div -->
         <div>
             <p>Input Array: </p>
             <pre id="inputArrayDisplay">[1, 2, 3, 4, 5]</pre>
+
+            <p>Input targetElement:</p>
+            <pre id="inputArrayDisplay">6</pre>
+
         </div>
+
 
         <!-- Argument Div -->
         <div>
             <p>Callback Function:</p>
-            <pre id="argumentDisplay">function(item) { return item * 2; }</pre>
+            
+            <pre id="argumentDisplay">function(arr, targetElement) { return true or false; }</pre>
+            
         </div>
 
         <!-- Result Div -->
         <div>
             <p>Result:</p>
-            <pre id="resultDisplay"></pre>
+            <pre id="displayMyIncludes"></pre>
         </div>
 
         <!-- Button -->
-        <button id="runMethodButton">Run myEach() for example</button>
+        <button id="myIncludesButton">Run myEach() for example</button>
     </div>
 
     <br></br>
@@ -85,7 +94,6 @@
         <!-- Button -->
         <button id="runMethodButton">Run myEach() for example</button>
     </div>
-
-  
+    <script src="george.js"></script>
 </body>
 </html>
