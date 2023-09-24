@@ -11,7 +11,7 @@
     <div>
         <h3>Method: myIncludes()</h3>
         <p>checks existence of an element in an array</p>
-        
+
         <!-- Input Div -->
         <div>
             <p>Input Array: </p>
@@ -38,7 +38,7 @@
         </div>
 
         <!-- Button -->
-        <button id="myIncludesButton">Run myEach() for example</button>
+        <button id="myIncludesButton">Run myIncludes() for example</button>
     </div>
 
     <br></br>
@@ -46,26 +46,31 @@
 
     <div>
         <h3>Method: myIndexOf()</h3>
+        <p>Returns the index of first encounter of targetElement</p>
         <!-- Input Div -->
         <div>
             <p>Input Array: </p>
-            <pre id="inputArrayDisplay">[1, 2, 3, 4, 5]</pre>
+            <pre id="inputArrayDisplay">[2, 4, 6, 8, 10, 4]</pre>
+
+            <p>Input targetElement:</p>
+            <pre id="inputArrayDisplay">4</pre>
+
         </div>
 
         <!-- Argument Div -->
         <div>
             <p>Callback Function:</p>
-            <pre id="argumentDisplay">function(item) { return item * 2; }</pre>
+            <pre id="argumentDisplay">function(arr, targetElement) { return index or -1 }</pre>
         </div>
 
         <!-- Result Div -->
         <div>
             <p>Result:</p>
-            <pre id="resultDisplay"></pre>
+            <pre id="displayMyIndexOf"></pre>
         </div>
 
         <!-- Button -->
-        <button id="runMethodButton">Run myEach() for example</button>
+        <button id="myIndexOfButton">Run myIndexOf() for example</button>
     </div>
 
     <br></br>

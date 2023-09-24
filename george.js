@@ -10,7 +10,6 @@ function myIncludes(arr, targetElement){
 // adding event listener to the myIncludes button
 document.getElementById("myIncludesButton").addEventListener("click", function () {
     let result = myIncludes([1, 2, 3, 4, 5], 6);
-
     document.getElementById("displayMyIncludes").textContent = result;
 });
 
@@ -24,6 +23,12 @@ function myIndexOf(arr, targetElement){
     }
     return -1;
 }
+
+// event listener for myIndexOf func
+document.getElementById("myIndexOfButton").addEventListener("click", function () {
+    let result = myIndexOf([2, 4, 6, 8, 10, 4], 4);
+    document.getElementById("displayMyIndexOf").textContent = result;
+});
 
 // myPush
 function myPush(arr, appendElement){
