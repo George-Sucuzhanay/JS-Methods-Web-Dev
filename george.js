@@ -1,4 +1,4 @@
-//  myIncludes
+//  myIncludes func
 function myIncludes(arr, targetElement){
     for(const i of arr){
         if(i == targetElement){
@@ -7,14 +7,13 @@ function myIncludes(arr, targetElement){
     }
     return false;
 }
-// adding event listener to the myIncludes button
+// event listener to the myIncludes button
 document.getElementById("myIncludesButton").addEventListener("click", function () {
     let result = myIncludes([1, 2, 3, 4, 5], 6);
     document.getElementById("displayMyIncludes").textContent = result;
 });
 
-
-// myIndexOf
+// myIndexOf func
 function myIndexOf(arr, targetElement){
     for(let i = 0; i < arr.length; i++){
         if(arr[i] == targetElement){
@@ -30,8 +29,14 @@ document.getElementById("myIndexOfButton").addEventListener("click", function ()
     document.getElementById("displayMyIndexOf").textContent = result;
 });
 
-// myPush
+// myPush func
 function myPush(arr, appendElement){
-    arr[arr.length] == appendElement;
+    arr[arr.length] = appendElement;
     return arr.length;
 }
+
+// event listener for myPush func
+document.getElementById("myPushButton").addEventListener("click", function () {
+    let result = myPush([20, 25, 30, 35, 40], 45);
+    document.getElementById("displayMyPush").textContent = result;
+})
