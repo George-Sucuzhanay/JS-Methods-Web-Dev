@@ -1,0 +1,56 @@
+body, ul {
+    margin: 0;
+    padding: 10px;
+    background-color: black;
+}
+
+nav {
+    background-color: rgb(62,62,62);
+    ; 
+    color: #fff; 
+    font-size: xx-large;
+    font-family: monospace;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center; 
+}
+
+li {
+    display: inline; 
+    margin-right: 20px; 
+}
+
+a {
+    text-decoration: none; 
+    color: #fff; 
+    transition: color 0.3s; 
+}
+
+a:hover {
+    color: #ff9900; 
+}
+
+#gn{
+    display:flex ;
+    justify-content: center;
+    font-family: monospace;
+    color: red;
+}
+
+#des{
+    display:flex ;
+    justify-content: center;
+    font-family: monospace;
+    color: blue;
+}
+
+#message{
+    display:flex ;
+    justify-content: center;
+    font-family: monospace;
+    color: white
+    
+    ; 
+}
