@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Methods</title>
+</head>
+<body>
+    <h1>Recreating Javascript functions!</h1>
+
+    <div>
+        <h3>Method: myIncludes()</h3>
+        <p>checks existence of an element in an array</p>
+
+        <!-- Input Div -->
+        <div>
+            <p>Input Array: </p>
+            <pre id="inputArrayDisplay">[1, 2, 3, 4, 5]</pre>
+
+            <p>Input Target Element:</p>
+            <pre id="inputArrayDisplay">6</pre>
+
+        </div>
+
+        <!-- Argument Div -->
+        <div>
+            <p>Callback Function:</p>
+            
+            <pre id="argumentDisplay">function(arr, targetElement) { return true or false; }</pre>
+            
+        </div>
+
+        <!-- Result Div -->
+        <div>
+            <p>Result:</p>
+            <pre id="displayMyIncludes"></pre>
+        </div>
+
+        <!-- Button -->
+        <button id="myIncludesButton">Run myIncludes() for example</button>
+    </div>
+
+    <br></br>
+    <br></br>
+
+    <div>
+        <h3>Method: myIndexOf()</h3>
+        <p>Returns the index of first encounter of targetElement</p>
+        <!-- Input Div -->
+        <div>
+            <p>Input Array: </p>
+            <pre id="inputArrayDisplay">[2, 4, 6, 8, 10, 4]</pre>
+
+            <p>Input Target Element:</p>
+            <pre id="inputArrayDisplay">4</pre>
+
+        </div>
+
+        <!-- Argument Div -->
+        <div>
+            <p>Callback Function:</p>
+            <pre id="argumentDisplay">function(arr, targetElement) { return index or -1 }</pre>
+        </div>
+
+        <!-- Result Div -->
+        <div>
+            <p>Result:</p>
+            <pre id="displayMyIndexOf"></pre>
+        </div>
+
+        <!-- Button -->
+        <button id="myIndexOfButton">Run myIndexOf() for example</button>
+    </div>
+
+    <br></br>
+    <br></br>
+    
+    <div>
+        <h3>Method: myPush()</h3>
+        <p>Appends an element at end of array and return array length</p>
+        <!-- Input Div -->
+        <div>
+            <p>Input Array: </p>
+            <pre id="inputArrayDisplay">[20, 25, 30, 35, 40]</pre>
+
+            <p>Input Target Element:</p>
+            <pre id="inputArrayDisplay">45</pre>
+        </div>
+
+        <!-- Argument Div -->
+        <div>
+            <p>Callback Function:</p>
+            <pre id="argumentDisplay">function(arr, targetElement) { return array length; }</pre>
+        </div>
+
+        <!-- Result Div -->
+        <div>
+            <p>Result:</p>
+            <pre id="displayMyPush"></pre>
+        </div>
+
+        <!-- Button -->
+        <button id="myPushButton">Run myPush() for example</button>
+    </div>
+    <script src="george.js"></script>
+</body>
+</html>
