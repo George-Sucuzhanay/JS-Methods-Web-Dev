@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kazi's 3 Methods</title>
+    <link rel="stylesheet" type="text/css" href="kazi.css">
+</head>
+<body>
+    <h1 style="color:rgb(103, 103, 223);">Kazi's 3 javascript methods</h1>
+<!-- myLastIndexOf method -->
+    <h2 style="color:rgb(122, 122, 210);">myLastIndexOf:</h2>
+    <p>Without using the native “Array.prototype.lastIndexOf” method of JavaScript, this function titled “myLastIndexOf” will take in an array of elements and return the index of the last encounter of a target element (if it is found) or -1 if that element does not exist within the input array!</p>
+    
+    <!-- Input Div to display the input Array -->
+    <div>
+        <h3>Input Array:</h3>
+        <input type="text" id="inputArray" placeholder="Enter an array here">
+        <br>
+        <p1>Input format: comma separated elements</p1>
+        <br>
+        <p2>Example input: 1,2,3,4,3,5,420</p2>
+    </div>
+
+    <!-- Argument Div to display the target element -->
+    <div>
+        <h3>Target Element:</h3>
+        <input type="text" id="targetElement" placeholder="Enter a target element here">
+        <br>
+        <p1>Input format: an element</p1>
+        <br>
+        <p2>Example input: 3</p2>
+    </div>
+
+    <!-- Button to run the myLastIndexOf method -->
+    <button id="runMyLastIndexOfButton" onclick="runMyLastIndexOf()">Run myLastIndexOf</button>
+
+    <!-- Result Div to display the result of the myLastIndexOf method -->
+    <div>
+        <h3>Result:</h3>
+        <pre id="resultDisplay"></pre>
+    </div>
+
+    <!-- include avaScript file -->
+    <script src="kazi.js"></script>
+
+    <script>
+        function runMyLastIndexOf() 
+        {
+            // Get the input array & target element from user input
+            // const inputArray = [1, 2, 3, 4, 3, 5];
+            // const targetElement = 3;
+            const inputArrayStr = document.getElementById('inputArray').value; //gets value stored inside inputArray
+            const targetElementStr = document.getElementById('targetElement').value; //^ 
+
+            // Convert user inputs to arrays
+            const inputArray = inputArrayStr.split(',').map(item => parseInt(item)); //after u .split through the , -> map(item => parseInt(item)) is applied to each substring. parseInt(item) then converts the string to integer 
+            const targetElement = parseInt(targetElementStr); //.map create a new array by applying a provided function to each element of the original array, parseInt(targetElementStr) converts this string into an integer,
+
+            // Call the function
+            const lastIndex = myLastIndexOf(inputArray, targetElement);
+
+            // Display the thing
+            document.getElementById('resultDisplay').textContent = lastIndex;
+        }
+    </script>
+
+<!-- grabKeys method -->
+    <h2 style="color:rgb(122, 122, 210);">grabKeys:</h2>
+    <p>Without using the native “Object.keys()” method of JavaScript, this function titled “grabKeys” takes in an object and returns all of the keys of the key:value pairs of that object!</p>
+
+    <!-- Input Div to display the input Object -->
+    <div>
+        <h3>Input Object:</h3>
+        <input type="text" id="inputObject" placeholder="Enter an object here">
+        <br>
+        <p1>Input format: {"key1": "value1", "key2": "value2", "key3": "value3"}</p1>
+        <br>
+        <p2>Example input: {"name": "Kazi", "age": 69, "city": "New Yawk"}</p2>
+    </div>
+
+    <!-- Button to run the grabKeys method -->
+    <button id="runGrabKeysButton" onclick="runGrabKeys()">Run grabKeys</button>
+
+    <!-- Result Div to display the result of the grabKeys method -->
+    <div>
+        <h3>Result:</h3>
+        <pre id="resultKeysDisplay"></pre>
+    </div>
+
+<!-- grabValues method -->
+    <h2 style="color:rgb(122, 122, 210);">grabValues:</h2>
+    <p>Without using the native “Object.values()” method of JavaScript, this function titled “grabValues” takes in an object and returns all of the values of the key:value pairs of that object!</p>
+    
+    <!-- Input Div to display the input Object -->
+    <div>
+        <h3>Input Object:</h3>
+        <input type="text" id="inputObject1" placeholder="Enter an object here">
+        <br>
+        <p1>Input format: {"key1": "value1", "key2": "value2", "key3": "value3"}</p1>
+        <br>
+        <p2>Example input: {"name": "Anwar", "age": 96, "city": "Old Yawk"}</p2>
+    </div>
+
+    <!-- Button to run the grabValues method -->
+    <button id="runGrabValuesButton" onclick="runGrabValues()">Run grabValues</button>
+
+    <!-- Result Div to display the result of the grabKeys method -->
+    <div>
+        <h3>Result:</h3>
+        <pre id="resultValuesDisplay"></pre>
+    </div>
+
+</body>
+</html>
