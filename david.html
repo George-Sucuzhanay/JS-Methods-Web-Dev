@@ -6,6 +6,52 @@
         <link rel="stylesheet" href="" />
     </head>
     <body>
+        <h1>
+            David's JS methods
+        </h1>
+        <h2>
+            MySome:
+        </h2>
+        <p>
+            The mysome method is a recreation of the JavaScript method Array.prototype.some(). It checks whether there is at least 1 element in the array which passes the test given by the function. If there is at least 1 element for which the function returns true then it returns true. Otherwise it returns false. This does not modify the array in any way.
+        </p>
+        <!-- Mysome input array -->
+        <div>
+            <h3>
+                Input Array:
+            </h3>
+            <input type="text" id="inputArr" placeholder="Enter Array:"/>
+            <br>
+            <p>
+                Input format: comma separated items like 1,2,3,4,5,6
+            </p>
+        </div>
+         <!-- Mysome input function -->
+         <div>
+            <h3>
+                Input function:
+            </h3>
+            <input type="text" id="inputFunction" placeholder="Enter Function:"/>
+            <br>
+            <p>
+                Enter function to use mySome with. Don't use const or let in front. For example: even = (element) => element % 2 === 0;
+            </p>
+        </div>
+
+
+
+        <!-- Button to run MySome -->
+        <button id="MySomeBtn" onclick="runMySome()">
+            Run MySome
+        </button>
+        <!-- Argument array -->
+        <div>
+            <h3>
+                Result Value:
+            </h3>
+            <p id="results"></p>
+        </div>
+        
         <script src="david.js"></script>
     </body>
 </html>
