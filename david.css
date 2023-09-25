@@ -1,0 +1,37 @@
+#results, #results2, #results3{
+  color: darkblue;
+  font-size: 20px;
+}
+h1{
+  color:#102a2a;
+}
+hr{
+  color: aliceblue;
+}
+h2{
+  color:#110930;
+  text-decoration: underline;
+}
+
+h3{
+  color:#1d1248;
+}
+
+button{
+  font-size: 17px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input{
+  width: 40%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}

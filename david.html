@@ -2,8 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>David File</title>
-        <link rel="stylesheet" href="" />
+        <title>David's JS methods</title>
+        <link rel="stylesheet" href="david.css" />
     </head>
     <body>
         <h1>
@@ -64,6 +64,10 @@
 
 
 
+
+
+
+
 <!-- MyEvery function implementation -->
 
         <h2>
@@ -92,7 +96,7 @@
             <input type="text" id="inputFunction2" placeholder="Enter Function:"/>
             <br>
             <p>
-                Enter function to use myEvery with. Don't use const or let in front. For example: even = (element) => element % 2 === 0;
+                Enter function to use myEvery with. Don't use const or let in front. For example: num = (item) =>  item -1;
             </p>
         </div>
 
@@ -109,6 +113,9 @@
             </h3>
             <p id="results2"></p>
         </div>
+        <br />
+        <hr />
+        <br />
 
 
 
@@ -116,6 +123,57 @@
 
 
 
+
+
+
+
+
+        <!-- Myreduce function implementation -->
+        <h2>
+            MyReduce:
+        </h2>
+
+        <p>
+            The myReduce method is a recreation of the JavaScript method Array.prototype.reduce(). It performs the function on each element in the array passing in the return value into the function for the next element in the array. The final output is the result of these function calls on every element in the array (after the last element of the array is being performed on by the function, the return value is the final result).
+        </p>
+        <!-- MyReduce input array -->
+        <div>
+            <h3>
+                Input Array:
+            </h3>
+            <input type="text" id="inputArr3" placeholder="Enter Array:"/>
+            <br>
+            <p>
+                Input format: comma separated items like 1,2,3,4,5,6
+            </p>
+        </div>
+         <!-- MyReduce input function -->
+         <div>
+            <h3>
+                Input function:
+            </h3>
+            <input type="text" id="inputFunction3" placeholder="Enter Function:"/>
+            <br>
+            <p>
+                Enter function to use myReduce with. Don't use const or let in front. For example: even = (element) => element % 2 === 0;
+            </p>
+        </div>
+
+
+
+        <!-- Button to run MyReduce -->
+        <button id="MyReduceBtn" onclick="MyReduce()">
+            Run MyReduce
+        </button>
+
+
+        <!-- Argument array -->
+        <div>
+            <h3>
+                Result Value:
+            </h3>
+            <p id="results3"></p>
+        </div>
 
 
         
