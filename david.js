@@ -65,3 +65,47 @@ function checkMyEvery(arr, func){
   }
   return true;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+// MyReduce Function Implementation
+
+const MyReduce = () =>{
+// Takes in the users input for the array as a string
+  const inputStr3 = document.getElementById('inputArr3').value;
+// converts the input string into the intended array
+  const inputArr3 = inputStr3.split(',');
+// stores input function as a string
+  const functionStr3 = document.getElementById('inputFunction3').value;
+// converts input function string into a function
+  const userFunction3 = eval(`${functionStr3}`);
+// Value of the total result of the function being performed on each element of the array
+  let answer3 = runMyReduce(inputArr3, userFunction3);
+  // store the paragraph element for results as a variable result
+    let result3 = document.getElementById('results3');
+  // modify the textContent with the results of the MyEvery function 
+    result3.textContent = answer3;
+
+}
+
+
+
+// function which takes in the array and the function to perform on each element of the array and returns final result after performing it on each element and using that return as the function operation
+
+const runMyReduce = (arr, func) =>{
+  let total = 0;
+  for (let i = 0; i < arr.length; i++){
+    total += func(arr[i]);
+  }
+  return total;
+}
+
